@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>data Entry Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="countries.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2 class="text-center text-primary">Online Registration Portal</h2>
+  <p class="text-center text-primary">NIT Hamirpur</p>     
+<!--   <table class="table table-bordered"> -->       
+  <table class="table table-dark table-hover">
+    <thead class="text-center">
+      <tr>
+        <th class="text-success font-weight-bold">Data Entry Form
+        (Session 2018-2019)</th>
+      </tr>
+    </thead>
+  </table>
+ <!--  <table class="table table-bordered"> -->
+  <table class="table table-dark table-hover">
+    <tbody>
+      <tr>
+      <td>JEE(Main) Roll No.:</td>
+      <td>
+      <input type="text" class="form-control"  id="usr" name="username">
+      </td>
+      </tr>
+
+       <tr>
+      <td>Student name(In English):</td>
+      <td>
+      <input type="text" class="form-control"  id="usr" name="username">
+      </td>
+      </tr>
+       <tr>
+      <td>Student name(In Hindi):</td>
+      <td>
+      <input type="text" class="form-control"  id="usr" name="username">
+      </td>
+      </tr>
+
+      <tr> 
+        <td>Gender:</td>
+
+        <td class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="optradio">Male
+  </label>
+</td>
+<td class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="optradio">Female
+  </label>
+</td>
+<td class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="optradio">Transgender
+  </label>
+</td>
+</tr>
+  <tr>
+      <td>Date of Birth(DD/MM/YYYY):</td>
+
+   <td class="well"> 
+      <input class="form-control" id="exampleInputDOB1" placeholder="Date of Birth" type="date">
+    </td> 
+  </tr>
+
+   <tr>
+      <td>Father's Name:</td>
+      <td>
+      <input type="text" class="form-control"  id="name" name="Father">
+      </td>
+      </tr>
+       <tr>
+      <td>Mother's Name :</td>
+      <td>
+      <input type="text" class="form-control"  id="name" name="Mother">
+      </td>
+      </tr>
+
+      <tr>
+      <td>JEE All India Rank (CRL):</td>
+      <td>
+      <input type="text" class="form-control"  id="Rank" name="CRL">
+      </td>
+      </tr>
+       <tr>
+      <td>JEE All India Rank (Category):</td>
+      <td>
+      <input type="text" class="form-control"  id="Rank" name="Category">
+      </td>
+      </tr>
+
+      <tr>
+      <td>All India Percentile Score in JEE 2018 (paperI/II):</td>
+      <td>
+      <input type="text" class="form-control"  id="Score" name="AIR">
+      </td>
+      </tr>
+       <tr>
+      <td>Percentile Score in Qualifying Examination:</td>
+      <td>
+      <input type="text" class="form-control"  id="Score" name="Qualifying">
+      </td>
+      </tr>
+      <tr> 
+        <td> Bonafide State of Candidate: </td>
+<td>
+      <select id="country" name ="country"></select>
+      State: <select name ="state" id ="state"></select>
+      <script language="javascript">
+        populateCountries("country", "state");
+        populateCountries("country2");
+      </script>
+          <!-- <select name="State" id="State"><option>States</option>
+<option>Andhra Pradesh</option><option>Arunachal Pradesh</option><option>Assam</option><option>Bihar</option>
+<option>Chhattisgarh</option><option>Goa</option><option>Gujarat</option><option>Haryana</option><option>Himachal Pradesh</option>
+<option>Jammu and Kashmir</option><option>Jharkhand</option><option>Karnataka</option><option>Kerala</option>
+<option>Madhya Pradesh</option><option>Maharashtra</option><option>Meghalaya</option><option>Manipur</option>
+<option>Mizoram</option><option>Nagaland</option><option>Odisha</option><option>Punjab</option>
+<option>Rajasthan</option><option>Sikkim</option><option>Tamil Nadu</option><option>Telangana</option>
+<option>Tripura</option><option>Uttar Pradesh</option><option>Uttarakhand</option><option>West Bengal</option>
+<option>Andaman and Nicobar Islands</option><option>Chandigarh</option><option> Dadra and Nagar Haveli</option><option> Daman and Diu</option>
+<option>Delhi</option><option>Lakshadweep</option><option>Puducherry</option><option>Others</option>
+</select> -->
+        </td>
+
+      </tr>
+
+      <tr>
+        
+<td> State from where +2 Examination passed: </td>
+ <td>
+      <select id="country1" name ="country1"></select>
+      State: <select name ="state1" id ="state1"></select>
+      <script language="javascript">
+        populateCountries("country1", "state1");
+        populateCountries("country2");
+      </script>
+       <!--  <select name="State" id="State"><option>States</option>
+<option>Andhra Pradesh</option><option>Arunachal Pradesh</option><option>Assam</option><option>Bihar</option>
+<option>Chhattisgarh</option><option>Goa</option><option>Gujarat</option><option>Haryana</option><option>Himachal Pradesh</option>
+<option>Jammu and Kashmir</option><option>Jharkhand</option><option>Karnataka</option><option>Kerala</option>
+<option>Madhya Pradesh</option><option>Maharashtra</option><option>Meghalaya</option><option>Manipur</option>
+<option>Mizoram</option><option>Nagaland</option><option>Odisha</option><option>Punjab</option>
+<option>Rajasthan</option><option>Sikkim</option><option>Tamil Nadu</option><option>Telangana</option>
+<option>Tripura</option><option>Uttar Pradesh</option><option>Uttarakhand</option><option>West Bengal</option>
+<option>Andaman and Nicobar Islands</option><option>Chandigarh</option><option> Dadra and Nagar Haveli</option><option> Daman and Diu</option>
+<option>Delhi</option><option>Lakshadweep</option><option>Puducherry</option><option>Others</option>
+</select> -->
+        </td>
+      </tr>
+
+      <tr>
+        <td>10+2 %age :</td>
+        <td>
+          <input type="text" class="form-control"  id="Marks" name="Percentage">
+
+          Note: Min. 75% [for GEN, OBC-NCL] & 65% [SC, ST, PWD ]
+
+        </td>
+
+
+      </tr>
+
+      <tr>
+        <td>Name of School(from where +2 Examination passed) : </td>
+        <td>
+          <input type="text" class="form-control"  id="name" name="School">
+        </td>
+      </tr>
+<tr>
+  
+  <td>Type of School (from where +2 Examination passed):</td>
+          <td class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="school">Govt. School
+  </label>
+</td>
+<td class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="school">Private School
+  </label>
+</td>
+</tr>
+
+ <tr> 
+        <td>Year of passing +2 exam:</td>
+
+        <td class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="Year">2016
+  </label>
+</td>
+<td class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="Year">2017
+  </label>
+</td>
+<td class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="Year">2018
+  </label>
+</td>
+</tr>
+
+<tr>
+  <td>Board: </td>
+  <td>
+    
+  <select name="Board" id="Board">
+ <option>Select Board</option>
+<option>Andhra Pradesh Board of Secondary Education</option>
+<option>Andhra Pradesh Board of Intermediate Education</option>
+<option>Andhra Pradesh Open School Society</option>
+<option>Assam Board of Secondary Education</option>
+<option>Assam Higher Secondary Education Council</option>
+<option>Assam State Open School</option>
+<option>Bihar Board of Open Schooling & Examination</option>
+<option>Bihar School Examination Board</option>
+<option>Board of Higher Secondary Education Delhi (BHSE)</option>
+<option>Central Board of Secondary Education (CBSE)</option>
+<option>Central Board of Education Ajmer New Delhi</option>
+<option>Chhattisgarh Secondary Board of Education</option>
+<option>Council for the Indian School Certificate Examinations (CISCE)</option>
+<option>Council Of Secondary Education Mohali (CSE Mohali)</option>
+<option>Goa Board of Secondary & Higher Secondary Education</option>
+<option>Gujarat Secondary Education Board</option>
+<option>Gujarat State Open School</option>
+<option>Haryana Board of School Education</option>
+<option>Gujarat State Open School</option>
+<option>Grameen Mukt Vidhyalayi Shiksha Sansthan(GMVSS)Delhi</option>
+<option>Haryana State Open School</option>
+<option>Himachal Pradesh Board of School Education</option>
+<option>Himachal Pradesh State Open School</option>
+<option>Indian Board of School Education</option>
+<option>Jammu and Kashmir State Board of School Education</option>
+<option>Jammu and Kashmir State Open School</option>
+<option>Jharkhand Academic Council</option>
+<option>Karnataka Secondary Education Examination Board</option>
+<option>Kerala Higher Secondary Examination Board</option>
+<option>Kerala State Open School</option>
+<option>Madhya Pradesh Board of Secondary Education</option>
+<option>Madhya Pradesh State Open School</option>
+<option>Maharashtra State Board of Secondary and Higher Secondary Education</option>
+<option>Meghalaya Board of School Education</option>
+<option>Mizoram Board of School Education</option>
+<option>Nagaland Board of School Education</option>
+<option>National Institute of Open Schooling (NIOS)</option>
+<option>Odisha Board of Secondary Education</option>
+<option>Odisha Council of Higher Secondary Education</option>
+<option>Punjab School Education Board</option>
+<option>Rajasthan Board of Secondary Education</option>
+<option>Rajasthan State Open School</option>
+<option>Tamil Nadu Board of Secondary Education</option>
+<option>Telangana Board of Intermediate Education</option>
+<option>Telangana Board of Secondary Education</option>
+<option>Tripura Board of Secondary Education</option>
+<option>Board of High School and Intermediate Education Uttar Pradesh</option>
+<option>Uttarakhand Board of School Education</option>
+<option>West Bengal Board of Madrasah Education</option>
+<option>West Bengal Board of Primary Education</option>
+<option>West Bengal Board of Secondary Education</option>
+<option>West Bengal Council of Higher Secondary Education</option>
+<option>West Bengal Council of Rabindra Open Schooling</option>
+<option>Uttar Pradesh Board of Secondary Education</option>
+<option>Others</option>
+</select>
+  </td>
+  
+
+</tr>
+
+<tr>
+        <td>JEE(Main) 2018 Score : </td>
+        <td>
+          <input type="text" class="form-control"  id="name" name="School">
+        </td>
+      </tr>
+
+      <tr>
+        <td> Qualifying Examination Normalized Score : </td>
+        <td>
+          <input type="text" class="form-control"  id="name" name="School">
+        </td>
+      </tr>
+
+<tr> 
+        <td>Main Category:</td>
+
+        <td class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="Category">OP
+  </label>
+</td>
+<td class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="Category">OPPwD
+  </label>
+</td>
+<td class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="Category">SC
+  </label>
+</td>
+
+      <td class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="Category">SCPwD
+  </label>
+</td>
+<td class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="Category">ST
+  </label>
+</td>
+<td class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="Category">STPwD
+  </label>
+</td>
+      <td class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="Category">OBC
+  </label>
+</td>
+<td class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="Category">OBCPwD
+  </label> 
+   >>Note: i) 40% Disability for PwD Candidate.
+     ii) OBC should be in central list
+</td>
+
+</tr>
+
+<tr> 
+        <td>Admitted in Category:</td>
+
+        <td class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="Admitted">OP
+  </label>
+</td>
+<td class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="Admitted">OPPwD
+  </label>
+</td>
+<td class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="Admitted">SC
+  </label>
+</td>
+
+      <td class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="Admitted">SCPwD
+  </label>
+</td>
+<td class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="Admitted">ST
+  </label>
+</td>
+<td class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="Admitted">STPwD
+  </label>
+</td>
+      <td class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="Admitted">OBC
+  </label>
+</td>
+<td class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="Admitted">OBCPwD
+  </label>
+</td>
+</tr>
+
+<tr>
+        <td> Aadhar No.: </td>
+        <td>
+          <input type="text" class="form-control"  id="Aadhar" name="Aadhar">
+        </td>
+      </tr>
+
+       <tr> 
+        <td>Class:</td>
+
+        <td class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="class">B.Tech.
+  </label>
+</td>
+<td class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="class">B.Arch.
+  </label>
+</td>
+<td class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="class">Dual Degree
+  </label>
+</td>
+</tr>
+<tr>
+<td>Branch:</td>
+<td>
+<select name="Branch" id="Branch">
+<option>Branch</option><option>ECE</option><option>ECE(Dual)</option>
+<option>CSE</option><option>CSE(Dual)</option>
+<option>ME</option><option>EEE</option><option>CE</option><option>ARCH</option>
+<option>Chemical</option><option>Material</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>Religion:</td>
+<td>
+<select name="Religion" id="Religion">
+<option>Religion</option><option>Hindu</option><option>Muslim</option><option>Sikh</option>
+<option>Christian</option><option>Buddh</option><option>Jain</option><option>Others</option>
+</select>
+</td>
+
+</tr>
+
+       <tr> 
+        <td>Hostel accommodation required or not:</td>
+
+        <td class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="accommodation">Hostel
+  </label>
+</td>
+<td class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="accommodation">Day Scholor
+  </label>
+</td>
+</tr>
+
+  <tr> 
+        <td>Area Belongs to:</td>
+
+        <td class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="Area">RURAL Area
+  </label>
+</td>
+<td class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="Area">URBAN Area
+  </label>
+</td>
+</tr>
+
+<tr>
+        <td> Nearest Railway Station with code: </td>
+        <td>
+          <input type="text" class="form-control"  id="Aadhar" name="Aadhar">
+        </td>
+      </tr>
+
+      <tr>
+        <td> Correspondance Address: </td>
+        <td>
+          <input type="text" class="form-control"  id="Aadhar" name="Aadhar">
+        </td>
+      </tr>
+
+      <tr>
+        <td> Permanent Address: </td>
+        <td>
+          <input type="text" class="form-control"  id="Aadhar" name="Aadhar">
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <table class="table table-dark table-hover">
+    
+    <thead>
+      </thead>
+      
+      <tbody>
+        <tr>
+        <td> Contact Numbers: </td>
+        <td><input type="text" class="form-control" placeholder="Father" id="Numbers" name="Father"></td>
+         <td> <input type="text" class="form-control" placeholder="Mother" id="Numbers" name="Mother"></td>
+          <td><input type="text" class="form-control" placeholder="Candidate" id="Numbers" name="Candidate"></td>
+         <td> <input type="text" class="form-control" placeholder="Any Other" id="Numbers" name="Any Other"></td>
+      </tr>
+        
+      </tbody>
+    
+  </table>
+
+    <table class="table table-dark table-hover">
+    
+    <thead>
+      Fee Status:
+      </thead>
+      
+      <tbody>
+        <tr>
+        <td> JoSAA-2018 :-</td>
+        <td> Amount: </td>
+        <td><input type="text" class="form-control"  id="Numbers" name="Amount"></td>
+        <td>Date:</td>
+         <td> <input type="text" class="form-control"  id="Numbers" name="Date"></td>
+      </tr>
+       <tr>
+        <td> NIT Hamirpur :- </td>
+        <td> Amount: </td>
+        <td><input type="text" class="form-control"  id="Numbers" name="Amount"></td>
+        <td>Date:</td>
+         <td> <input type="text" class="form-control"  id="Numbers" name="Date"></td>
+            <td>Receipt No.:</td>
+         <td> <input type="text" class="form-control"  id="Numbers" name="Receipt"></td>
+      </tr>
+        
+      </tbody>
+    
+  </table>
+
+   <table class="table table-dark table-hover">
+      
+      <tbody>
+        <tr>
+        <td> For office use Only :-</td>
+        <td> Entry No.: </td>
+        <td><input type="text" class="form-control"  id="Numbers" name="Entry"></td>
+        <td>Section:</td>
+         <td> <input type="text" class="form-control"  id="Numbers" name="Section"></td>
+                 <td>Subsection:</td>
+         <td> <input type="text" class="form-control"  id="Numbers" name="Subsection"></td>
+      </tr>
+    </tbody>
+  </table>
+   <!-- <button type="button" class="btn btn-primary btn-block">Button 1</button>  -->
+   <button type="button" class="btn btn-primary btn-mm mx-auto" style="font-style: italic;">Submit</button>
+
+</div>
+
+</body>
+</html>
