@@ -1,0 +1,10 @@
+
+    select {
+        width: 300px;
+        margin-right:16px;
+        height: 40px
+    }
+    /*select:focus {
+        min-width: 120px;
+        width: auto;
+    }*/

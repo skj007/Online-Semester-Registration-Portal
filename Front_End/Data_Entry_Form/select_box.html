@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Increase Select Box Size on Focus</title>
+<style type="text/css">
+    select {
+        width: 250px;
+        margin: 10px;
+        height: 30px
+    }
+    select:focus {
+        min-width: 150px;
+        width: auto;
+    }    
+</style>
+</head>
+<body>
+    <form>
+        <select>
+            <option>Choose</option>
+            <option>This option is large</option>
+            <option>This option is very large</option>
+            <option>This option is very very large</option>
+            <option>This option is very very very large</option>
+        </select>
+        <select>
+            <option>Choose</option>
+            <option>This option is large</option>
+            <option>This option is very large</option>
+            <option>This option is very very large</option>
+            <option>This option is very very very large</option>
+        </select>
+    </form>
+</body>
+</html>   
